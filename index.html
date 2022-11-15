@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lloyd Allen Portfolio Website</title>
+    <!-- linking css file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/31149d48b0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+      <div class="container">
+        <a class="navbar-brand" href="#">Lloyd</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Banner -->
+    <section class="bgimage" id="home">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+            <h2 class="hero_title">Hi, it's me Lloyd Allen</h2>
+            <p class="hero_desc">
+              I am a inspring software developer from Baton Rouge.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section-->
+    <section id="about">
+      <div class="container mt-4 pt-4">
+          <h1 class="text-center">About Me</h1>
+          <div class="row mt-4">
+              <div class="col-lg-4">
+                  <img src="images/Lloyd Allen Picture.jpg" class= "imageAboutPage" alt="">
+              </div>
+
+              <div class="col-lg-8">
+                  <p> I graduated Southern Unviersity with a computer science Bachler degree. I chose this field of study because Im interested in vidoes games and unique visually appealing projects. In addition, couple of my family members are also computer science majors with great successful careers. I learned programming languages such as C++, HTML, CSS and Java. 
+                    I am currently interested in going deeper into full-stack Web development and Game development.
+                  </p>
+                  <div class="row mt-3">
+                    <div class="col-md-6">
+                      <ul>
+                          <li>Name: Lloyd Allen </li>
+                          <li>Age: 25</li>
+                          <li>Occupation: Front end Developer and Unity Developer</li>
+
+                      </ul>
+                  </div>
+              </div>
+          </div>
+  </section>
+
+  <!-- Skills Section-->
+  <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="assets/icons8-html-5-144.png"
+            alt=""
+            
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons8-css3-144.png"
+            alt=""
+            
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons8-javascript.gif"
+            alt=""
+            
+            class="icon icon-card"
+          />
+        </div>
+
+        <div class="second-set animate__animated animate__pulse">
+          <img
+            src="assets/icons8-bootstrap.svg"
+            alt=""
+            
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons8-python.gif"
+            alt=""
+            
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons8-unity.svg"
+            alt=""
+            
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Project Section  -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Some Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="images/portfolioImage4.jpg"
+            alt="expense-tracker"
+            
+            class="project-pic"
+          />
+          <h3 class="project-title">Space Invaders</h3>
+          <p class="project-details">
+            A fixed shooter in which the
+            player moves horizontally across the bottom of the
+            screen and fires at aliens overhead.
+          </p>
+          <a href="https://github.com/lloydallen597/Space-Invader-Game" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="images/portfolioImage2.jpg"
+            alt="netflic-clone"
+            
+            class="project-pic"
+          />
+          <h3 class="project-title">UnderDog</h3>
+          <p class="project-details">
+            A basic static Website that demostrating basic HTML, CSS, and Bootstrap.
+          </p>
+          <a href="https://lloydallen597.github.io/UnderDog/" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="images/portfolioImage3.jpg"
+            alt="greeny-earth"
+            
+            class="project-pic"
+          />
+          <h3 class="project-title">Dice-Game</h3>
+          <p class="project-details">
+            A nice little app that roll the dice between player one & two and has basic Javascript.
+          </p>
+          <a href="https://lloydallen597.github.io/Dice-Game/index.html" target="_blank" class="project-link">Check it Out</a>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section  -->
+    <section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="lloydallen597@gmail.com" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Social Section  -->
+    <div class="socials">
+      <a href="https://twitter.com/MadAllen8327006" target="_blank"
+        ><img
+          src="assets/icons8-twitter-circled.gif"
+          alt="Twitter"
+          
+          class="socicon"
+      /></a>
+      <a href="https://www.linkedin.com/in/lloyd-allen-a84121192/" target="_blank"
+        ><img
+          src="assets/icons8-linkedin-black.gif"
+          alt="Linkedin"
+          
+          class="socicon"
+      /></a>
+      <a href="https://www.facebook.com/profile.php?id=100013396591274" target="_blank"
+        ><img
+          src="assets/icons8-facebook-circled.gif"
+          alt="Facebook"
+          
+          class="socicon"
+      /></a>
+      <a href="https://github.com/lloydallen597" target="_blank"
+        ><img src="assets/icons8-github.gif" alt="Github" class="socicon"
+      /></a>
+    </div>>
+    <!-- Footer Section  -->
+    <footer>
+      <p class="copy">&copy; Copyright 2022</p>
+      <p class="copy">
+        Built by Lloyd Allen.
+      </p>
+    </footer>
+    <!-- load javascript after loading all html content -->
+    <script src="script.js"></script>
+  </body>
+</html>
