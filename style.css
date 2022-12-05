@@ -7,7 +7,7 @@ html {
   background-color: black;
 }
   
-  body {
+body {
     font-family: 'Courier New', Courier, monospace;
   }
 
@@ -18,6 +18,7 @@ html {
     background-size:cover;
     position:relative;
 }
+
 
 /* text css above hero image*/
 .hero_title {
@@ -38,6 +39,7 @@ html {
 /* about section image css */
 .imageAboutPage {
     width: 90%;
+    margin: auto;
 }
 
 /* Skill section  */
@@ -83,9 +85,12 @@ html {
 .projects-container {
   display: flex;
   align-items: center;
-  justify-content: center;
   text-align: center;
   padding: 1rem;
+}
+
+.project-container p {
+  padding: 0.4rem;
 }
 
 .projects-title {
@@ -114,6 +119,15 @@ html {
   margin: 10px;
 }
 
+.project-link {
+  text-decoration: none;
+  color: blue
+}
+
+.project-link:hover {
+  text-decoration: underline;
+  color: red;
+}
 
 /* Contact Section  */
 .contact {
@@ -192,6 +206,18 @@ html {
   height: 2rem;
 }
 
+.scroll-up {
+  position: fixed;
+  right: 0.5%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+.up-arrow {
+  width: 3rem;
+  height: 3rem;
+}
+
 footer {
   background-color: rgb(114, 168, 248);
   padding: 1.25rem;
@@ -202,8 +228,49 @@ footer {
 /* spacing on all sections */
 #about, #skills, #projects, #contact {
   margin-top: 4rem;
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 #contact {
   padding-bottom: 4rem;
 }
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 720px) {
+  /*changes reflects on screen with a width of 720px and below*/
+  .bio {
+    margin-top: 7rem;
+    width: 20.5rem;
+  }
+
+  nav {
+    padding: 1.5rem 1rem;
+  }
+
+  .icon {
+    width: 5.875rem;
+    height: 5.25rem;
+  }
+
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .project-container {
+    width: 20.875rem;
+  }
+
+  .contact-form-container {
+    max-width: 23.75rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  .project-container {
+    width: 17.875rem;
+  }
+
+  .contact-form-container {
+    max-width: 17.75rem;
+  }
+} 
