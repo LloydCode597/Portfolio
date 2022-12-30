@@ -1,45 +1,54 @@
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 
 /* display background color black on navbar scroll */
 .navbarScroll.navbarDark {
   background-color: black;
 }
-  
-body {
-    font-family: 'Courier New', Courier, monospace;
-  }
 
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+p {
+  margin-left: 1rem;
+}
 /* hero background image */
 .bgimage {
-    height:100vh;
-    background: url('images/StylishImage.jpg');
-    background-size:cover;
-    position:relative;
+  height: 100vh;
+  background: url("images/StylishImage.jpg");
+  background-size: cover;
+  position: relative;
 }
-
 
 /* text css above hero image*/
 .hero_title {
-    font-size: 4.5rem;
+  font-size: 4.5rem;
 }
 .hero_desc {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 .hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
-/* about section image css */
+/* about section image */
 .imageAboutPage {
-    width: 90%;
-    margin: auto;
+  width: 90%;
+  margin: auto;
+}
+
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 5);
+  padding-left: calc(var(--bs-gutter-x) * 9);
 }
 
 /* Skill section  */
@@ -70,6 +79,7 @@ body {
   padding: 20px;
   margin: 10px;
 }
+
 /* Project Section */
 .projects {
   background-color: white;
@@ -98,7 +108,6 @@ body {
   margin-bottom: 1rem;
 }
 
-
 .project-container p {
   padding: 0.4rem;
 }
@@ -108,20 +117,20 @@ body {
 }
 
 .project-details {
-  margin-bottom: auto; 
+  margin-bottom: auto;
 }
 
 .project-card {
   background-color: #fff;
   border-radius: 11px;
-  box-shadow: 0 3px 10px; 
+  box-shadow: 0 3px 10px;
   padding: 20px;
   margin: 10px;
 }
 
 .project-link {
   text-decoration: none;
-  color: blue
+  color: blue;
 }
 
 .project-link:hover {
@@ -182,13 +191,12 @@ body {
   border: 2px solid rgb(82, 138, 243);
   border-radius: 5px;
   font-size: 1rem;
-  font-weight: bold; 
+  font-weight: bold;
   transition: all;
-  
 }
 
 .submit-btn:hover {
-   background-color: rgb(82, 138, 243);
+  background-color: rgb(82, 138, 243);
   border: 2px solid rgb(82, 138, 243);
   cursor: pointer;
 }
@@ -214,8 +222,8 @@ body {
 }
 
 .up-arrow {
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 footer {
@@ -226,7 +234,10 @@ footer {
 }
 
 /* spacing on all sections */
-#about, #skills, #projects, #contact {
+#about,
+#skills,
+#projects,
+#contact {
   margin-top: 4rem;
   padding-top: 2rem;
 }
@@ -265,7 +276,6 @@ footer {
 }
 
 @media screen and (max-width: 420px) {
-
   .project-container {
     width: 17.875rem;
   }
@@ -273,4 +283,4 @@ footer {
   .contact-form-container {
     max-width: 17.75rem;
   }
-} 
+}
