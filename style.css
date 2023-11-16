@@ -119,28 +119,35 @@ p {
 }
 
 .project-pic {
-  width: 65%;
-  height: 60%;
+  width: 100%;
+  height: 100%; /* Set height to 100% to ensure all images have the same height */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
 }
 
 .projects-container {
   display: flex;
-  align-items: center;
+  align-items: stretch; /* Make sure each container stretches to the same height */
+  justify-content: space-between; /* Distribute space between containers */
   text-align: center;
   padding: 1rem;
 }
 
-.project-container p {
-  padding: 0.4rem;
+.project-container {
+  flex: 1;
+  max-width: 475px;
+  height: 500px; /* Set a fixed height for the project container */
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
 }
+
+/* .project-container p {
+  padding: 0.4rem;
+} */
 
 .projects-title {
   text-align: center;
   margin-bottom: 1rem;
-}
-
-.project-container p {
-  padding: 0.4rem;
 }
 
 .project-title {
@@ -308,6 +315,8 @@ footer {
 
   .projects-container {
     flex-direction: column;
+    display: flex;
+    align-items: center;
   }
 
   .project-container {
